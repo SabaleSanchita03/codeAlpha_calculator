@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Theme Button -->
+    <button id="themeToggle" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <div class="container">
+
+        <!-- Calculator -->
+        <div class="calculator">
+
+            <h2>Calculator</h2>
+
+            <!-- Display -->
+            <div class="display">
+
+                <div id="previousOperand" class="previous"></div>
+
+                <input type="text"
+                    id="currentOperand"
+                    value="0"
+                    readonly>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="btn clear" data-action="clear">
+                    AC
+                </button>
+
+                <button class="btn delete" data-action="delete">
+                    ⌫
+                </button>
+
+                <button class="btn operator" data-action="percent">
+                    %
+                </button>
+
+                <button class="btn operator" data-operation="/">
+                    ÷
+                </button>
+
+                <!-- Row -->
+
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+
+                <button class="btn operator"
+                    data-operation="*">
+                    ×
+                </button>
+
+                <!-- Row -->
+
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+
+                <button class="btn operator"
+                    data-operation="-">
+                    −
+                </button>
+
+                <!-- Row -->
+
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+
+                <button class="btn operator"
+                    data-operation="+">
+                    +
+                </button>
+
+                <!-- Last Row -->
+
+                <button class="btn operator"
+                    data-action="plusminus">
+                    +/−
+                </button>
+
+                <button class="btn number">0</button>
+
+                <button class="btn number">
+                    .
+                </button>
+
+                <button class="btn equal"
+                    data-action="calculate">
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- History Panel -->
+
+        <div class="history">
+
+            <div class="history-header">
+
+                <h2>History</h2>
+
+                <button id="clearHistory">
+                    Clear
+                </button>
+
+            </div>
+
+            <ul id="historyList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            Advanced Calculator
+
+            <span>•</span>
+
+            Built using HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- Script -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
