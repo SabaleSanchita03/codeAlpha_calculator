@@ -15,10 +15,4 @@ A responsive calculator built using HTML, CSS, and JavaScript.
 - CSS
 - JavaScript
 
-## Live Demo
-(Add GitHub Pages link here after deployment)
-
-
----
-
 Made with ❤️ for frontend practice
